@@ -1,0 +1,13 @@
+Sentença de código
+    - Um comando para o computador fazer alguma coisa
+    - Um programa de computador é formado por setenças de códigos
+        - Equivalente a uma frase
+    - Pode ou não terminar com ponto e virgúla (;)
+    - Pode ocupar várias linhas
+        - No meio de aspas duplas não pode
+    
+    
+Bloco de código
+    - É um agrupamento de setenças de código
+    - Tem que ter um proposito
+    - Definido por um par de chaves
