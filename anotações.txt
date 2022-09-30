@@ -11,3 +11,25 @@ Bloco de código
     - É um agrupamento de setenças de código
     - Tem que ter um proposito
     - Definido por um par de chaves
+
+Fundamentos
+    - Algoritmo é o processo que o código tem que passar
+        - Sequência de passos
+        - Não é software
+        - Tem repetição, decisão ...
+        - A ordem dos passos é importante
+        - Representação
+            - Fluxograma
+            - Linguagem natural (Português, Inglês, etc.)
+            - Linguagem artificial (C, C++, Java, PHP, Javascript, etc)
+    - Estrutura de dados visa organizar e administrar os dados
+        - Estruturas
+            - Fila (FIFO - First In First Out)
+            - Pilha(LIFO)
+            - Arvore (Pastas de músicas por exemplo)
+        - Est. de dados básicos
+            - Int
+            - Real
+            - Letras
+            - Bool
+- Javascript é uma lingu fracamente tipada
