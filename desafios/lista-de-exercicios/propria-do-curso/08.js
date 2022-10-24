@@ -5,13 +5,42 @@
  * e quando fez seu pior jogo. (Número do pior jogo).
 
  */
- const getRamdon = (max, min) => {
+const pontuacoes = []
+const recordeEPiorResultado = []
+let recorde = 0
+
+// gera numero randomicos
+const getRamdon = (max, min) => {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-const pontuacoes = []
-for (let i = 0; i <= 10; i++){
-    pontuacoes.push(getRamdon(1, 50))
+const getPontucao = () => {
+    // cria uma lista com numeros randomicos
+    for (let i = 0; i <= 5; i++){
+        pontuacoes.push(getRamdon(1, 31))
+    }
+    
+    let maiorPontucao = Number(pontuacoes[0])
+
+    // pega o pior resultado
+    const getPiorResultado = pontuacoes.reduce(function (a,b){
+        return Math.min(a,b)
+    })
+
+    // vai verificar quantas vezes ele quebra o proprio recorde
+    for (let x = 0; x <= pontuacoes.length; x++){
+        
+        if (Number(pontuacoes[x]) > maiorPontucao){
+            maiorPontucao = Number(pontuacoes[x])
+            recorde++
+        } 
+    }
+
+    recordeEPiorResultado.push(recorde,getPiorResultado)    
+    console.log(pontuacoes)    
+    return console.log(recordeEPiorResultado) 
 }
 
-console.log(pontuacoes)
+getPontucao()
+
+
