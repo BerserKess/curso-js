@@ -17,7 +17,7 @@ const getRamdon = (max, min) => {
 const getPontucao = () => {
     // cria uma lista com numeros randomicos
     for (let i = 0; i <= 5; i++){
-        pontuacoes.push(getRamdon(1, 31))
+        pontuacoes.push(getRamdon(31, 1))
     }
     
     let maiorPontucao = Number(pontuacoes[0])

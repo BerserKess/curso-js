@@ -8,7 +8,9 @@ function imprimirNome (nome, indice){
     console.log(`${indice + 1} - ${nome}`)
 }
 fabricantes.forEach(imprimirNome)
+
 fabricantes.forEach(function (marcas){
     console.log(marcas)
 })
+
 fabricantes.forEach(marcas => console.log(marcas))
