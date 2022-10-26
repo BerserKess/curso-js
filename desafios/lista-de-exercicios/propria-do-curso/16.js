@@ -6,26 +6,30 @@
  * Por exemplo: calculadora (2, ‘+’, 3). A função efetuará a soma
  * de 2 e 3. Dica: Os sinais das operações são: ‘+’. ‘-’, ‘*’ e ‘/’. Crie um caso default para operações inválidas.
  */
-
+ 
 const calculadora = (a,b = qualOperacao(),c) =>{
-    const qualOperacao = (operacao) =>{
-        switch (operacao) {
+    // verifica qual operação será realizada
+    function qualOperacao (operacao) {
+        return operacao
+     }
+     
+        switch (b) {
             case '+':
-                console.log(`${a} + ${c} =${a + c}`)
+               console.log(`${a} ${b} ${c} = ${a + c}`)
                 break
             case '-':
-                console.log(`${a} - ${c} =${a + c}`)
+                console.log(`${a} ${b} ${c} = ${a + c}`)
                 break
             case '*':
-                console.log(`${a} * ${c} =${a * c}`)
+                console.log(`${a} ${b} ${c} = ${a * c}`)
                 break
             case '/':
-                console.log(`${a} / ${c} =${a / c}`)
+                console.log(`${a} ${b} ${c} = ${a / c}`)
                 break
                 default:
                     console.log('Operação invalida')
         }   
     }
-}
 
-calculadora(2, '+',2)
+
+calculadora(3,'*',2)
