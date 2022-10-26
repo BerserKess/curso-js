@@ -1,5 +1,6 @@
 {
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveFileBeforeRun": true,
-    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true
 }
