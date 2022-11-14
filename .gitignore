@@ -1,0 +1,18 @@
+### Text ###
+*.doc
+*.docx
+*.log
+*.msg
+*.pages
+*.rtf
+*.txt
+*.wpd
+*.wps
+anotações.txt
+anotações.txt
+
+### Pasta Node modules ###
+node_modules/
+
+package-lock.json
+package.json
