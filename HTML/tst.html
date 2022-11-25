@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #back {
+                background-color: gray;
+            }
+            .end {
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <button teste>exibir</button>
+        <div id="back" class="end">fdasdfasd</div>
+        <script>
+            document.querySelectorAll('[teste]').forEach(elemento => {
+                elemento.onclick = function (evento) {
+                    const div = elemento.nextElementSibling;
+                    const displey = div.style.display;
+                    div.style.display = displey === 'none' ? 'block' : 'none';
+                };
+            });
+            /*const elemento = document.getElementById('back');
+
+            function exibirOcultar() {
+                elemento.style.display =
+                    elemento.style.display === 'none' ? 'block' : 'none';
+            }*/
+        </script>
+    </body>
+</html>

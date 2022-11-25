@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css" />
+<style>
+    .dropdown {
+        display: none;
+    }
+    #dropdown {
+        display: none;
+    }
+</style>
+<h1>Lista Aninhada</h1>
+<h2>Filmes</h2>
+<ul class="tree">
+    <li>
+        <span wm-hide>Ação</span>
+        <ul class="dropdown">
+            <li>Mercenários</li>
+            <li>John Wick</li>
+            <li>Rambo</li>
+        </ul>
+    </li>
+    <li>
+        <span wm-hide>Terror</span>
+        <ul class="dropdown">
+            <li>Invocação do Mal</li>
+            <li>Sobrenatural</li>
+            <li>IT: A coisa</li>
+        </ul>
+    </li>
+    <li>
+        <span wm-hide>Aventura/Fanstasia</span>
+        <ul class="dropdown">
+            <li>Senhor dos Anéis</li>
+            <li>Harry Potter</li>
+            <li>Jogador N°1</li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    document.querySelectorAll('[wm-hide]').forEach(elemento => {
+        elemento.onclick = function (evento) {
+            const lista = elemento.nextElementSibling; // coloca o proximo objeto (ul nesse caso) na variavel
+            let exibir = lista.style.display; // armazena o display na variavel exibir
+            lista.style.display = exibir === 'none' ? 'block' : 'none'; // operação ternária para mudar o display de none para block e vice-versa
+        };
+    });
+</script>
