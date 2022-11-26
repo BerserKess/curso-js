@@ -1,0 +1,65 @@
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    th,
+    td {
+        padding: 10px;
+    }
+    thead {
+        border-bottom: solid 4px #464;
+    }
+
+    tbody tr:hover {
+        background-color: #898;
+    }
+    tbody {
+        text-align: center;
+    }
+    tfoot {
+        background-color: #464;
+    }
+    tfoot td {
+        text-align: center;
+        color: azure;
+        font-weight: bold;
+    }
+</style>
+<table>
+    <caption>
+        Produtos
+    </caption>
+    <!-- Cabeçalho -->
+    <thead>
+        <!--  tr linha da tabela  -->
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Valor Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- td celula da tabela -->
+            <td>Notebook</td>
+            <td>1.700</td>
+            <td>1</td>
+            <td>1.700</td>
+        </tr>
+        <tr>
+            <td>Celular</td>
+            <td>1.500</td>
+            <td>2</td>
+            <td>3.000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <!-- colspan aumenta a quantidade de colunas que o td ocupa -->
+            <!-- rolspan aumenta a quantidade de linhas -->
+            <td colspan="3">Total</td>
+            <td>4.700</td>
+        </tr>
+    </tfoot>
+</table>

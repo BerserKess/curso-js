@@ -1,0 +1,43 @@
+<style>
+    input,
+    textarea,
+    select {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type='radio'] {
+        /* só para input do tipo radio */
+        display: inline;
+    }
+    input[type='checkbox'] {
+        display: inline;
+    }
+</style>
+<h1>Formulários</h1>
+<form method="POST">
+    <input type="hidden" name="id" value="3" />
+    <input type="text" name="nome" />
+    <input type="password" name="senha" />
+    <textarea name="bio" id="" cols="30" rows="10"></textarea>
+    <div>
+        <input type="radio" name="tipo" value="admin" /> Admin
+        <input type="radio" name="tipo" value="normal" /> Normal
+    </div>
+    <div><input type="checkbox" name="ativo" /> Ativo</div>
+
+    <select name="estado">
+        <option value="">Selecione</option>
+        <option value="am">Amazonia</option>
+        <option value="ba">Bahia</option>
+        <option value="ce">Ceara</option>
+    </select>
+    <select name="interesses" multiple size="5">
+        <option value="js">Javascript</option>
+        <option value="css">CSS</option>
+        <option value="html">HTML 5</option>
+        <option value="py">Python</option>
+    </select>
+
+    <button formaction=" http://localhost:5500/usuarios">Cadastrar</button>
+    <button formaction=" http://localhost:5500/usuarios/3">Alterar</button>
+</form>
